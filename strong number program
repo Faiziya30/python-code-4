@@ -1,0 +1,18 @@
+#STRONG NUMBER
+
+sumfact=0
+num=int(input("num: "))
+temp=num
+while(num):
+    i=1
+    fact=2
+    digit=num%10
+    while(i <= digit):
+        fact=fact*i
+        i=i+1
+    sumfact=sumfact + fact
+    num=num//10
+    if (sumfact==temp):
+        print("strong number")
+    else:
+        print("not a strong number")
